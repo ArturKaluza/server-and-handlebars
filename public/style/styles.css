@@ -24,6 +24,7 @@
     --laptop: #BBBCB7;
     --yellow: #FFF7AA;
     --yellow-chrome: #ffa801;
+    --jade: #00d8d6;
 }
 
 .container {
@@ -171,13 +172,13 @@ header .header__slogan {
 /* info */
 .info {
     background: var(--white);
+    text-align: center;
 }
 
 .info .container {
     display: flex;
     justify-content: space-between;
     padding: 100px 0;
-
 }
 
 .info .item {
@@ -209,6 +210,29 @@ header .header__slogan {
     font-size: var(--font-normal);
 }
 
+.info a {
+    width: 200px;
+    height: 40px;
+    display: inline-block;
+    background-image: linear-gradient(135deg, var(--spiro-disco-ball) 50%, var(--good-night) 50%,  var(--good-night) 100%);
+    background-size: 300%;
+    background-position: 100% 0%;
+    border: 1px solid black;
+    border-radius: 3px;
+    font-family: var(--font-fira);
+    font-size: var(--font-normal);
+    color: var(--spiro-disco-ball);
+    line-height: 40px;
+    margin-bottom: 40px;
+    text-decoration: none;
+    transition: .3s ease; 
+}
+
+.info a:hover {
+    background-position: 0% 100%;
+    color: var(--white);
+}
+
 /* footer */ 
 footer {
     background: var(--good-night);
@@ -227,6 +251,159 @@ footer .container {
 
 footer .container h4 {
     font-weight: 400;
+}
+
+/* about */
+.about {
+    background: var(--white);
+}
+
+.about .container {
+    display: flex;
+    font-family: var(--font-fira);
+    margin-top: 40px;
+}
+
+.about main {
+   max-width: 792px;
+   padding-right: 30px;
+}
+
+.about main h3 {
+    color: var(--spiro-disco-ball);
+    font-size: var(--font-large);
+    margin-bottom: 40px;
+}
+
+.about main p {
+    padding: 0 20px 40px;
+    font-size: var(--font-normal);
+}
+
+.about main p:nth-child(3) {
+    background: var(--good-night);
+    color: var(--white);
+    padding-top: 40px;
+}
+
+.about main p:nth-child(4) {
+    padding-top: 40px;
+}
+
+.about aside {
+    max-width: 400px;
+    padding-top: 40px;
+}
+
+.about aside h3 {
+    color: var(--spiro-disco-ball);
+    font-size: var(--font-large);
+}
+
+.about aside p {
+    font-size: var(--font-normal);
+}
+
+/* service */
+.service .container {
+    display: flex;
+    align-items: center;
+    margin: 40px auto;
+    font-family: var(--font-fira);
+}
+
+.service main h1 {
+    font-family: var(--font-fira);
+    font-size: var(--font-xl);
+    color: var(--spiro-disco-ball);
+    margin-bottom: 30px;
+}
+
+.service .par {
+    max-width: 792px;
+    background: var(--london-square);
+    padding: 15px 20px;
+    margin-bottom: 40px;
+    border: 1px solid var(--good-night);
+}
+
+.service .par h3 {
+    color: var(--jade);
+    font-size: var(--font-large);
+}
+
+.service .par p {
+    font-size: var(--font-small);
+}
+
+.service .par:last-of-type {
+    margin-bottom: 0;
+}
+
+.service aside {
+    width: 400px;
+    padding: 15px;
+    text-align: center;
+}
+
+.service form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--good-night);
+    border: 1px solid black;
+    color: var(--white);    
+}
+
+.service form h3 {
+    font-size: var(--font-normal);
+    color: var(--spiro-disco-ball);
+    margin-top: 10px;
+}
+
+.service form .input-grup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px auto;
+    transition: .3s ease;
+}
+
+.service .input-grup label {
+    font-family: var(--font-fira);
+    font-size: var(--font-normal);
+    padding-bottom: 5px;
+}
+
+.service .input-grup input {
+    width: 320px;
+    height: 40px;
+    font-size: var(--font-normal);
+    padding: 3px;
+}
+
+.service .input-grup textarea {
+    width: 320px;
+    font-size: var(--font-normal);
+    padding: 3px;
+    margin-bottom: 20px;
+}
+
+.service .input-grup input:focus, .service .input-grup textarea:focus {
+    background: var(--yellow);
+}
+
+.service form button {
+    width: 200px;
+    height: 40px;
+    background: var(--spiro-disco-ball);
+    color: var(--white);
+    border: none;
+    border-radius: 4px;
+    line-height: 40px;
+    font-size: var(--font-normal);
+    margin-bottom: 20px;
 }
 
 /* helpers */
