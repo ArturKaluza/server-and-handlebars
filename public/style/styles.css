@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,700&subset=latin-ext');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*font-size: 10px; */
+}
+
+:root {
+    --font-small: 1.2rem;
+    --font-normal: 1.6rem;
+    --font-large: 2rem;
+    --font-big: 2.4rem;
+    --font-xl: 3.2rem;
+
+    --font-fira: 'Fira Sans', sans-serif;
+
+    --red-orange: #ff3f34;
+    --spiro-disco-ball: #0fbcf9;
+    --london-square: #808e9b;
+    --good-night: #485460;
+    --laptop: #BBBCB7;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1192px;
+}
+
+/* navigation */
+nav {
+    background: var(--laptop);
+    font-family: var(--font-fira);
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .nav__logo {
+    color: var(--good-night);
+    font-size: var(--font-normal);
+    font-weight: bold;
+    padding: 10px 5px;
+    text-transform: uppercase;
+}
+
+.nav__logo span {
+    color: var(--spiro-disco-ball);
+}
+
+nav .nav__list {
+    display: flex;
+    list-style-type: none;
+
+}
+
+.nav__list a {
+    color: var(--good-night);
+    display: block;
+    font-size: var(--font-normal);
+    
+    padding: 10px 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .3s ease;
+}
+
+.nav__list a:hover {
+    color: var(--spiro-disco-ball);
+}
+
+/* header */
+header {
+    background-image: url('/img/macbook.jpeg');
+    background-size: cover;
+    
+}
+
+header .container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+header .header__slogan {
+    width: 900px;
+    background: rgba(0,0,0, 0.6);
+    color: #f4f4f4;
+    text-align: center;
+}
+
+.header__slogan h1 {
+    font-family: var(--font-fira);
+    font-size: var(--font-xl);
+    padding: 20px 0 15px;
+}
+
+.header__slogan h1 span {
+    color: var(--spiro-disco-ball);
+}
+
+.header__slogan p {
+    font-family: var(--font-fira);
+    font-size: var(--font-large);
+    padding-bottom: 50px;
+}
+
+/* newslatter */
+.newslatter {
+    
+}
+
+.newslatter .container {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
