@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" href="/style/styles.css">
     <title>Document</title>
 </head>
@@ -19,15 +20,33 @@
     </header>
     <section class="newslatter">
         <div class="container">
-            <h2>Subscribe Our Newsletter</h2>
+            <h2>Subscribe Our <span class="blue">Newsletter</span></h2>
             <form id="newslatter">
-                <input type="text">
+                <input type="text" placeholder="email">
                 <button>Subscribe</button>
             </form>
         </div>
     </section>
-    
-
+    <section class="info">
+        <div class="container">
+            <div class="item">
+                <i class="fas fa-book-open"></i>
+                <h2>Research</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus fugiat ab temporibus consequuntur quasi cumque dicta, odio sit mollitia quas.</p>
+            </div>
+            <div class="item">
+                <i class="fas fa-bolt"></i>
+                <h2>Speed</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse nemo quis asperiores placeat totam adipisci cupiditate fuga, illum ab laborum exercitationem vel mollitia.</p>
+            </div>
+            <div class="item">
+                <i class="fas fa-balance-scale"></i>
+                <h2>Law</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt exercitationem odit necessitatibus cum impedit soluta velit. Aspernatur, fugiat.</p>
+            </div>
+        </div>
+    </section>
+    {{> footer}}
    
 </body>
 </html>

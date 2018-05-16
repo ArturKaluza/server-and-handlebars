@@ -10,15 +10,17 @@ hbs.registerPartials(__dirname + '/views/partials')
 
 app.get('/', (req, res) => {
     res.render('home.hbs', {
-        autor: 'Artur'
+        autor: 'Artur',
+        date: new Date().getFullYear()
     });
-})
+});
 
 app.get('/home', (req, res) => {
     res.render('home.hbs', {
-        autor: 'Artur'
+        autor: 'Artur',
+        date: new Date().getFullYear()
     });
-})
+});
 
 app.get('/about', (req, res) => {
     res.render('about.hbs');
@@ -26,7 +28,7 @@ app.get('/about', (req, res) => {
 
 app.get('/services', (req, res) => {
     res.render('services.hbs');
-})
+});
 
 app.listen(3000, () => {
     console.log('server is running');
