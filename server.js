@@ -42,6 +42,13 @@ app.post('/subscribe', (req, res) => {
     }
 });
 
+app.post('/message', (req, res) => {
+    if (req.body) {
+        return res.status(201).send();
+    } else {
+        return res.status(406).send();
+    }
+});
 
 app.listen(3000, () => {
     console.log('server is running');

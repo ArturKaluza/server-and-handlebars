@@ -26,6 +26,8 @@
     --yellow: #FFF7AA;
     --yellow-chrome: #ffa801;
     --jade: #00d8d6;
+    --green: #05c46b;
+    --black-pearl: #1e272e;
 }
 
 .container {
@@ -141,7 +143,7 @@ header .header__slogan {
 }
 
 .newslatter form input {
-    height: 41px;
+    height: 39px;
     width: 300px;
     border: 1px solid black;
     border-radius: 4px;
@@ -405,6 +407,30 @@ footer .container h4 {
     line-height: 40px;
     font-size: var(--font-normal);
     margin-bottom: 20px;
+}
+
+.service form .success {
+    width: 87%;
+    background: var(--green);
+    border: 1px solid black;
+    display: none;
+    padding: 10px 0;
+}
+
+.service .success h3 {
+    color: var(--black-pearl);
+}
+
+.service form .alert {
+    width: 87%;
+    background: var(--red-orange);
+    border: 1px solid black;
+    display: none;
+    padding: 10px 0;
+}
+
+.service .alert h3 {
+    color: var(--black-pearl);
 }
 
 /* helpers */
