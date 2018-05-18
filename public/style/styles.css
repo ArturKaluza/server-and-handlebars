@@ -8,6 +8,7 @@
 }
 
 :root {
+    font-size: 14px;
     --font-small: 1.2rem;
     --font-normal: 1.6rem;
     --font-large: 2rem;
@@ -297,7 +298,7 @@ footer .container h4 {
 
 .about aside h3 {
     color: var(--spiro-disco-ball);
-    font-size: var(--font-large);
+    font-size: var(--font-normal);
 }
 
 .about aside p {
@@ -333,7 +334,7 @@ footer .container h4 {
 }
 
 .service .par p {
-    font-size: var(--font-small);
+    font-size: var(--font-normal);
 }
 
 .service .par:last-of-type {
